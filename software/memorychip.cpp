@@ -100,7 +100,7 @@ void MemoryChip::powerOn()
         SET_BITS_IN_PORT_HIGH(_wePin.out, _wePin.bitMask);
     }
     _isOn = true;
-    delayMicroseconds(5);
+    delayMicroseconds(150);
 }
 
 void MemoryChip::getProperties(MemoryChipKnownProperties* knownProperties,
